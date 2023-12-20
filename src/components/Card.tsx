@@ -11,7 +11,7 @@ interface CardTypes {
 
 const Card = (props: CardTypes) => {
     const deleteTodo = (id: number) => {
-      props.setList(props.setList.filter((todo: any) => todo.id !== id))
+      props.setList(props.list.filter((todo: any) => todo.id !== id))
     };
   return (
     <div className="flex items-center">
